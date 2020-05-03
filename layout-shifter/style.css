@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100%;
+  min-height: 150px;
+}
+
+.blue {
+  background-color: darkblue;
+}
+
+.light-blue {
+  background-color: lightblue;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+@media screen and (min-width: 500px) {
+  .blue {
+    width: 50%;
+  }
+
+  #container2 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .blue {
+    width: 25%;
+    order: 1;
+  }
+
+  #container2 {
+    width: 50%;
+  }
+
+  .red {
+    width: 25%;
+    order: -1;
+  }
+}
